@@ -17,25 +17,19 @@
 使用 `curl`：
 
 ```sh
-curl -fsSL -o port-guard.sh https://raw.githubusercontent.com/allenmien/port-guard/main/port-guard.sh
-chmod +x port-guard.sh
-sudo ./port-guard.sh
+curl -fsSL -o port-guard.sh https://raw.githubusercontent.com/allenmien/port-guard/main/port-guard.sh && chmod +x port-guard.sh && sudo ./port-guard.sh
 ```
 
 或使用 `wget`：
 
 ```sh
-wget -O port-guard.sh https://raw.githubusercontent.com/allenmien/port-guard/main/port-guard.sh
-chmod +x port-guard.sh
-sudo ./port-guard.sh
+wget -O port-guard.sh https://raw.githubusercontent.com/allenmien/port-guard/main/port-guard.sh && chmod +x port-guard.sh && sudo ./port-guard.sh
 ```
 
 如果想下载后直接安装为系统命令：
 
 ```sh
-curl -fsSL -o port-guard.sh https://raw.githubusercontent.com/allenmien/port-guard/main/port-guard.sh
-chmod +x port-guard.sh
-sudo ./port-guard.sh install
+curl -fsSL -o port-guard.sh https://raw.githubusercontent.com/allenmien/port-guard/main/port-guard.sh && chmod +x port-guard.sh && sudo ./port-guard.sh install
 ```
 
 安装完成后即可使用：
