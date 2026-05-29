@@ -12,9 +12,35 @@
 
 ## 快速使用
 
+### 一键下载安装
+
+使用 `curl`：
+
 ```sh
-chmod +x ./port-guard.sh
+curl -fsSL -o port-guard.sh https://raw.githubusercontent.com/allenmien/port-guard/main/port-guard.sh
+chmod +x port-guard.sh
+sudo ./port-guard.sh
+```
+
+或使用 `wget`：
+
+```sh
+wget -O port-guard.sh https://raw.githubusercontent.com/allenmien/port-guard/main/port-guard.sh
+chmod +x port-guard.sh
+sudo ./port-guard.sh
+```
+
+如果想下载后直接安装为系统命令：
+
+```sh
+curl -fsSL -o port-guard.sh https://raw.githubusercontent.com/allenmien/port-guard/main/port-guard.sh
+chmod +x port-guard.sh
 sudo ./port-guard.sh install
+```
+
+安装完成后即可使用：
+
+```sh
 sudo port-guard add --port 443 --proto tcp \
   --ip 1.2.3.4 \
   --ips "5.6.7.0/24,8.8.8.8" \
@@ -24,7 +50,7 @@ sudo port-guard add --port 443 --proto tcp \
   --interval 30
 ```
 
-也可以直接进入交互菜单：
+如果已经 clone 了仓库，也可以在项目目录里运行：
 
 ```sh
 sudo ./port-guard.sh
