@@ -35,6 +35,11 @@ curl -fsSL -o port-guard.sh https://raw.githubusercontent.com/allenmien/port-gua
 安装完成后即可使用：
 
 ```sh
+port-guard
+```
+
+
+```sh
 sudo port-guard add --port 443 --proto tcp \
   --ip 1.2.3.4 \
   --ips "5.6.7.0/24,8.8.8.8" \
